@@ -36,15 +36,23 @@ Attributes:
 * forum_name: str
 ## Method
 * Web crawler  
-StemawayProject/talkfolksy-scraper/talkfolksy1/spiders/Main_page.py  
-StemawayProject/talkfolksy-scraper/talkfolksy1/spiders/Post_page.py
+talkfolksy-scraper/talkfolksy1/spiders/Main_page.py  
+Web crawler for the discussion topics and contents on the main page of the forums.  
+talkfolksy-scraper/talkfolksy1/spiders/Post_page.py  
+Web crawler for the discussion contents on each topic page. 
+* Bert NLP Text classification
+model.py  
 
-## Tuning
+## Libraries  
+* pandas
+* numpy
+* re
+* torch
+* transformers
+* sklearn.linear_model
+* sklearn.model_selection
+* html2text
+* DistilBertTokenizer
+* torch.utils.data
+* datetime
 
-## Libraries
-
-Building a forum classifier for Discourse forum posts with BERT
-
-* Webscrape data from 7 public Discourse forums to get texts from posts and their associated metadata.
-* Use a transformer-based neural architecture (BERT) as a feature extractor to create a sequence level embedding for each post that holds information to how each sequence is relative to each other.
-* Build a forum classifier to predict the forum for any given post.
